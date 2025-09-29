@@ -1,0 +1,132 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #171e4b;
+  color: #333;
+}
+.container{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.bolhas{
+  position: absolute;
+  display: flex;
+}
+
+.bolhas span{
+  width: 30px;
+  height: 30px;
+  background: yellow;
+  margin: 0 4px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #e5ff0044,
+  0 0 50px #e5ff00,
+  0 0 100px #e5ff00;
+  animation: animar calc(90s / var(--i)) linear infinite;
+}
+
+@keyframes animar{
+  0%{
+    transform: translateY(98vh) scale(0);
+  }
+  100%{
+    transform: translateY(-10vh) scale(1);
+  }
+}
+
+.bolhas span:nth-of-type(even){
+  background: #2dc3ff;
+  box-shadow: 0 0 0 10px #e5ff0044,
+  0 0 50px #2dc3ff,
+  0 0 100px #2dc3ff;
+}
+
+.main-container{
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: azure;
+  align-items: center;
+  padding: 12px;
+}
+
+.main {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  top: 500%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  width: 320px;
+}
+
+.perfil {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid #fff;
+}
+
+img{
+  width: 250px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.info{
+  padding: 30px;
+  font-size: 115%;
+  text-align: center;
+}
+
+.main{
+  width: 400px;
+  height: auto;
+  align-items: center;
+}
+
+.header{
+  padding-bottom: 20px;
+}
+
+.links{
+  width: 160px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn{
+  padding: 10px;
+  display: flex;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: aqua;
+  margin: 5px;
+}
+
+.projetos{
+  margin-bottom: 10px;
+}
