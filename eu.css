@@ -12,6 +12,7 @@ body {
   padding: 0;
   background: #171e4b;
   color: #333;
+  overflow-y: auto;
 }
 .container{
   position: relative;
@@ -52,6 +53,8 @@ body {
 }
 
 .main-container{
+  height: 96px;
+  width: auto;
   position: fixed;
   top: 10%;
   left: 50%;
@@ -62,6 +65,9 @@ body {
 }
 
 .main {
+  width: 400px;
+  height: auto;
+  align-items: center;
   display: flex;
   position: absolute;
   flex-direction: column;
@@ -100,11 +106,6 @@ img{
   text-align: center;
 }
 
-.main{
-  width: 400px;
-  height: auto;
-  align-items: center;
-}
 
 .header{
   padding-bottom: 20px;
@@ -119,7 +120,7 @@ img{
 }
 
 .btn{
-  padding: 10px;
+  padding: 12px;
   display: flex;
   cursor: pointer;
   border-radius: 50%;
@@ -129,6 +130,4 @@ img{
 
 .projetos{
   margin-bottom: 10px;
-
 }
-
